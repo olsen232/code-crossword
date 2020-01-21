@@ -233,6 +233,10 @@ function init() {
   document.body.appendChild(renderGrid(grid));
   document.body.appendChild(document.createElement('br'));
   document.body.appendChild(renderHud());
+  document.body.onclick = function(event) {
+    event.stopPropagation();
+    handleClick(0);
+  }
   window.addEventListener("keydown", handleKey);
   setNumberToLetter(22, 'P');
   setNumberToLetter(24, 'R');
