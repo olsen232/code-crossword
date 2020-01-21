@@ -1,0 +1,75 @@
+table {
+  margin: auto;
+  border-collapse: collapse;
+}
+
+td {
+  position: relative;
+  font-size: 150%;
+  width: 1.75em;
+  height: 1.75em;
+  border: solid black 1px;
+}
+
+.number {
+  top: 0px;
+  left: 0.1em;
+  position: absolute;
+  font-size: 75%;
+}
+
+.letter {
+  display: block;
+  margin: auto;
+  text-align: center;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+td.black {
+  background-color: black;
+}
+
+td.selected {
+  background-color: yellow;
+}
+
+.hud {
+  font-size: 75%;
+}
+
+.used {
+  background-color: #aaa;
+}
+
+@keyframes flashred {
+  0% {background-color: red;}
+  100% {background-color: white;}
+}
+
+@keyframes flashred2 {
+  0% {background-color: red;}
+  100% {background-color: white;}
+}
+
+.uhoh {
+  animation-name: flashred;
+  animation-duration: 2s;
+}
+
+.ohno {
+  animation-name: flashred2;
+  animation-duration: 2s;
+}
+
+@keyframes flashwhite {
+  0% {background-color: white;}
+  50% {background-color: #aaa;}
+  100% {background-color: white;}
+}
+
+.yay {
+  animation-name: flashwhite;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
